@@ -8,6 +8,13 @@
     android:gravity="center"
     tools:context=".MainActivity">
 
-
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/github" />
 
 </RelativeLayout>
