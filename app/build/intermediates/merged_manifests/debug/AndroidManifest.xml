@@ -8,6 +8,8 @@
         android:minSdkVersion="16"
         android:targetSdkVersion="30" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -17,7 +19,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
         <activity android:name="com.ahfasxp.githubusers.SplashScreenActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,6 +30,12 @@
         </activity>
         <activity android:name="com.ahfasxp.githubusers.DetailUserActivity" />
         <activity android:name="com.ahfasxp.githubusers.MainActivity" />
+
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="com.ahfasxp.githubusers.lifecycle-process"
+            android:exported="false"
+            android:multiprocess="true" />
     </application>
 
 </manifest>
