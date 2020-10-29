@@ -21,15 +21,16 @@ class DetailUserActivity : AppCompatActivity() {
 
         val username = intent.getStringExtra(EXTRA_USER).toString()
 
-        //data tidak terkirim ke fragment
-        val mFollowerFragment = FollowerFragment()
-        val mBundle = Bundle()
-        mBundle.putString(FollowerFragment.EXTRA_USER_NAME, "Ini argumen")
-        mFollowerFragment.arguments = mBundle
+//        //data tidak terkirim ke fragment
+//        val mFollowerFragment = FollowerFragment()
+//        val mBundle = Bundle()
+//        mBundle.putString(FollowerFragment.EXTRA_USER_NAME, "Ini argumen")
+//        mFollowerFragment.arguments = mBundle
 
         setUser(username)
 
-        val sectionsPagerAdapter = SectionsPagerAdapter(this, supportFragmentManager, mBundle)
+        val sectionsPagerAdapter = SectionsPagerAdapter(this, supportFragmentManager)
+        sectionsPagerAdapter.username = username
         view_pager.adapter = sectionsPagerAdapter
         tabs.setupWithViewPager(view_pager)
         supportActionBar?.elevation = 0f

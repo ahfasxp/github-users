@@ -23,7 +23,15 @@ class FollowerFragment : Fragment() {
     lateinit var tvTest: TextView
 
     companion object {
-        var EXTRA_USER_NAME = "extra_user_name"
+        private val ARG_USERNAME = "username"
+
+        fun newInstance(username: String): HomeFragment{
+            val fragment = FollowerFragment()
+            val bundle = Bundle()
+            bundle.putString(ARG_USERNAME, username)
+            fragment.arguments = bundle
+            return fragment
+        }
     }
 
     override fun onCreateView(
@@ -41,7 +49,7 @@ class FollowerFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-            val userName = arguments?.getString(EXTRA_USER_NAME)
+            val userName = arguments?.getString(ARG_USERNAME)
             Log.d("cekusername", userName.toString())
             tv_username.text = userName
     }
