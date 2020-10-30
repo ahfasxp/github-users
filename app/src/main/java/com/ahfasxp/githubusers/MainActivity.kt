@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
 
         //recycleview list dari string.xml
         rv_list.setHasFixedSize(true)
+        showLoading(true)
         list.addAll(getListUsers())
         val listUserAdapter = UserAdapter(list)
         rv_list.layoutManager = LinearLayoutManager(this)
@@ -93,6 +94,7 @@ class MainActivity : AppCompatActivity() {
                 dataFollowing[position]
             )
             listUser.add(user)
+            showLoading(false)
         }
         return listUser
     }

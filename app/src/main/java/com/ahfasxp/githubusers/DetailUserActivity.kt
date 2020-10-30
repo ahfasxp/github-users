@@ -2,12 +2,15 @@ package com.ahfasxp.githubusers
 
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.loopj.android.http.AsyncHttpClient
 import com.loopj.android.http.AsyncHttpResponseHandler
 import cz.msebera.android.httpclient.Header
 import kotlinx.android.synthetic.main.activity_detail_user.*
+import kotlinx.android.synthetic.main.activity_detail_user.progressBar
+import kotlinx.android.synthetic.main.activity_main.*
 import org.json.JSONObject
 
 class DetailUserActivity : AppCompatActivity() {
@@ -20,15 +23,10 @@ class DetailUserActivity : AppCompatActivity() {
         setContentView(R.layout.activity_detail_user)
 
         val username = intent.getStringExtra(EXTRA_USER).toString()
-
-//        //data tidak terkirim ke fragment
-//        val mFollowerFragment = FollowerFragment()
-//        val mBundle = Bundle()
-//        mBundle.putString(FollowerFragment.EXTRA_USER_NAME, "Ini argumen")
-//        mFollowerFragment.arguments = mBundle
-
+        showLoading(true)
         setUser(username)
 
+        //kirim data username ke fragment follower dan following
         val sectionsPagerAdapter = SectionsPagerAdapter(this, supportFragmentManager)
         sectionsPagerAdapter.username = username
         view_pager.adapter = sectionsPagerAdapter
@@ -37,11 +35,19 @@ class DetailUserActivity : AppCompatActivity() {
 
     }
 
+    private fun showLoading(state: Boolean) {
+        if (state) {
+            progressBar.visibility = View.VISIBLE
+        } else {
+            progressBar.visibility = View.GONE
+        }
+    }
+
     fun setUser(username: String) {
         val listItems = ArrayList<SearchUser>()
         val url = "https://api.github.com/users/$username"
         val client = AsyncHttpClient()
-        client.addHeader("Authorization", "ad81bb7c78a5023aa15e58403d1cb5b8ac813d32")
+        client.addHeader("Authorization", "token ad81bb7c78a5023aa15e58403d1cb5b8ac813d32")
         client.addHeader("User-Agent", "request")
         client.get(url, object : AsyncHttpResponseHandler() {
             override fun onSuccess(
@@ -64,6 +70,7 @@ class DetailUserActivity : AppCompatActivity() {
                     val follower = responseObject.getInt("followers").toString()
                     val following = responseObject.getInt("following").toString()
                     tv_followers.text = "$follower follower - $following following"
+                    showLoading(false)
                 } catch (e: Exception) {
                     Log.d("Exception", e.message.toString())
                 }
