@@ -142,7 +142,7 @@ class MainActivity : AppCompatActivity() {
     private fun showSearchUser(user: SearchUser) {
         Toast.makeText(this, "Kamu memilih ${user.username}", Toast.LENGTH_SHORT).show()
         val moveDetailUserIntent = Intent(this@MainActivity, DetailUserActivity::class.java)
-        var selectedUser = user.username
+        val selectedUser = user.username
         moveDetailUserIntent.putExtra(DetailUserActivity.EXTRA_USER, selectedUser)
         startActivity(moveDetailUserIntent)
     }
@@ -150,7 +150,7 @@ class MainActivity : AppCompatActivity() {
     private fun showUser(user: User) {
         Toast.makeText(this, "Kamu memilih ${user.name}", Toast.LENGTH_SHORT).show()
         val moveDetailUserIntent = Intent(this@MainActivity, DetailUserActivity::class.java)
-        var selectedUser = user.username
+        val selectedUser = user.username
         moveDetailUserIntent.putExtra(DetailUserActivity.EXTRA_USER, selectedUser)
         startActivity(moveDetailUserIntent)
     }

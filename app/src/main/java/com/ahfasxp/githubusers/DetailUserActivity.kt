@@ -69,7 +69,7 @@ class DetailUserActivity : AppCompatActivity() {
                     tv_company.text = responseObject.getString("company")
                     val follower = responseObject.getInt("followers").toString()
                     val following = responseObject.getInt("following").toString()
-                    tv_followers.text = "$follower follower - $following following"
+                    tv_followers.text = getString(R.string.user_followers, follower, following)
                     showLoading(false)
                 } catch (e: Exception) {
                     Log.d("Exception", e.message.toString())

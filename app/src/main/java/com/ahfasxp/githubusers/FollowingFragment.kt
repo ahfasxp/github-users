@@ -68,7 +68,7 @@ class FollowingFragment : Fragment() {
         rv_list_following.adapter = adapter
     }
 
-    fun setUser(username: String) {
+    private fun setUser(username: String) {
         val listItems = ArrayList<SearchUser>()
         val url = "https://api.github.com/users/$username/following"
         val client = AsyncHttpClient()

@@ -10,6 +10,7 @@
     <string name="search">Search</string>
     <string name="tab_text_1">Follower</string>
     <string name="tab_text_2">Following</string>
+    <string name="user_followers">%s follower - %s following</string>
 
     <string-array name="username">
         <item>JakeWharton</item>
