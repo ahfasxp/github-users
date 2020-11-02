@@ -11,6 +11,13 @@
     <string name="tab_text_1">Follower</string>
     <string name="tab_text_2">Following</string>
     <string name="user_followers">%s follower - %s following</string>
+    <string name="settings">Settings</string>
+    <string name="alarm_enabled">Alarm has been enabled</string>
+    <string name="alarm_canceled">Alarm has been canceled</string>
+    <string name="reminder">Reminder</string>
+    <string name="reminder_time">Reminder at 9:00 AM</string>
+    <string name="lets_find_user_popular">Lets find user popular on github</string>
+    <string name="favorite">Favorite</string>
 
     <string-array name="username">
         <item>JakeWharton</item>
@@ -115,6 +122,4 @@
         <item>@drawable/user9</item>
         <item>@drawable/user10</item>
     </array>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

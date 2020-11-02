@@ -10,6 +10,13 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <permission
+        android:name="com.ahfasxp.githubusers.READ_DATABASE"
+        android:protectionLevel="normal" />
+    <permission
+        android:name="com.ahfasxp.githubusers.WRITE_DATABASE"
+        android:protectionLevel="normal" />
+
     <application
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -28,9 +35,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.ahfasxp.githubusers.DetailUserActivity" />
-        <activity android:name="com.ahfasxp.githubusers.MainActivity" />
+        <activity android:name="com.ahfasxp.githubusers.ui.detailUser.DetailUserActivity" />
+        <activity android:name="com.ahfasxp.githubusers.ui.main.MainActivity" />
+        <activity android:name="com.ahfasxp.githubusers.ui.favoriteUser.FavoriteActivity" />
+        <activity android:name="com.ahfasxp.githubusers.SettingsActivity" />
 
+        <provider
+            android:name="com.ahfasxp.githubusers.provider.MyContentProvider"
+            android:authorities="com.ahfasxp.githubusers"
+            android:exported="true"
+            android:readPermission="com.ahfasxp.githubusers.READ_DATABASE"
+            android:writePermission="com.ahfasxp.githubusers.WRITE_DATABASE" />
         <provider
             android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
             android:authorities="com.ahfasxp.githubusers.lifecycle-process"

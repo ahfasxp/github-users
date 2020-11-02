@@ -7,4 +7,13 @@
         android:title="@string/search"
         app:actionViewClass="android.widget.SearchView"
         app:showAsAction="collapseActionView|always" />
+
+    <group android:menuCategory="container">
+        <item android:id="@+id/favorite"
+            android:title="@string/favorite"
+            android:icon = "@drawable/ic_baseline_favorite_24"
+            app:showAsAction="always" />
+        <item android:id="@+id/settings"
+            android:title="@string/settings" />
+    </group>
 </menu>
