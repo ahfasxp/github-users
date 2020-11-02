@@ -35,9 +35,11 @@ class MyContentProvider : ContentProvider() {
             sUriMatcher.addURI(AUTHORITY, TABLE_NAME, USER)
 
             // content://com.dicoding.picodiploma.mynotesapp/note/id
-            sUriMatcher.addURI(AUTHORITY,
+            sUriMatcher.addURI(
+                AUTHORITY,
                 "$TABLE_NAME/#",
-                USER_ID)
+                USER_ID
+            )
         }
     }
 
@@ -51,7 +53,13 @@ class MyContentProvider : ContentProvider() {
     Method queryAll digunakan ketika ingin menjalankan queryAll Select
     Return cursor
      */
-    override fun query(uri: Uri, strings: Array<String>?, s: String?, strings1: Array<String>?, s1: String?): Cursor? {
+    override fun query(
+        uri: Uri,
+        strings: Array<String>?,
+        s: String?,
+        strings1: Array<String>?,
+        s1: String?
+    ): Cursor? {
         val cursor: Cursor?
         when (sUriMatcher.match(uri)) {
             USER -> cursor = favoriteHelper.queryAll()
@@ -80,9 +88,17 @@ class MyContentProvider : ContentProvider() {
     }
 
 
-    override fun update(uri: Uri, contentValues: ContentValues?, s: String?, strings: Array<String>?): Int {
+    override fun update(
+        uri: Uri,
+        contentValues: ContentValues?,
+        s: String?,
+        strings: Array<String>?
+    ): Int {
         val updated: Int = when (USER_ID) {
-            sUriMatcher.match(uri) -> favoriteHelper.update(uri.lastPathSegment.toString(),contentValues)
+            sUriMatcher.match(uri) -> favoriteHelper.update(
+                uri.lastPathSegment.toString(),
+                contentValues
+            )
             else -> 0
         }
 
@@ -92,7 +108,7 @@ class MyContentProvider : ContentProvider() {
     }
 
     override fun delete(uri: Uri, s: String?, strings: Array<String>?): Int {
-        val deleted: Int = when (USER) {
+        val deleted: Int = when (USER_ID) {
             sUriMatcher.match(uri) -> favoriteHelper.delete(uri.lastPathSegment.toString())
             else -> 0
         }

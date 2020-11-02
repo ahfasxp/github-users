@@ -28,10 +28,6 @@ import kotlin.collections.ArrayList
 
 class DetailUserActivity : AppCompatActivity(), View.OnClickListener {
     private var favorite: Favorite? = null
-    private lateinit var favoriteHelper: FavoriteHelper
-    private lateinit var uriWithId: Uri
-    private var position: Int = 0
-    private var isEdit = false
     var id: Int? = null
     var avatar: String? = null
     var uname: String? = null
@@ -60,7 +56,7 @@ class DetailUserActivity : AppCompatActivity(), View.OnClickListener {
         btFavorite.visibility = View.VISIBLE
         val favoriteHelper = FavoriteHelper.getInstance(applicationContext)
         favoriteHelper.open()
-        if (favoriteHelper.check(username)){
+        if (favoriteHelper.check(username)) {
             btFavorite.visibility = View.GONE
             btUnFavorite.visibility = View.VISIBLE
         }
@@ -89,7 +85,7 @@ class DetailUserActivity : AppCompatActivity(), View.OnClickListener {
 
         //button unfavorite
         btUnFavorite.setOnClickListener {
-            contentResolver.delete(Uri.parse(CONTENT_URI.toString() + "/" + favorite?.id),null,null)
+            contentResolver.delete(Uri.parse("$CONTENT_URI/$id"), null, null)
             btFavorite.visibility = View.VISIBLE
             btUnFavorite.visibility = View.INVISIBLE
             Toast.makeText(this, "User Unfavorite", Toast.LENGTH_SHORT).show()
