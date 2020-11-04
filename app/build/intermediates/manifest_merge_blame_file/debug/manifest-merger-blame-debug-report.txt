@@ -28,7 +28,7 @@
 18-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:7:71-103
 19
 20    <application
-20-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:8:5-34:19
+20-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:8:5-37:19
 21        android:allowBackup="true"
 21-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:9:9-35
 22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -74,28 +74,37 @@
 41-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:26:9-54
 41-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:26:19-51
 42
-43        <provider
-43-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:28:9-33:80
-44            android:name="com.ahfasxp.githubusers.provider.MyContentProvider"
-44-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:30:13-55
-45            android:authorities="com.ahfasxp.githubusers"
-45-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:29:13-58
-46            android:exported="true"
-46-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:31:13-36
-47            android:readPermission="com.ahfasxp.githubusers.READ_DATABASE"
-47-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:32:13-75
-48            android:writePermission="com.ahfasxp.githubusers.WRITE_DATABASE" />
-48-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:33:13-77
-49        <provider
-49-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ahfasxp\.gradle\caches\transforms-2\files-2.1\655ea1ea7815761ad3eb24b5a42949f9\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
-50            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-50-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ahfasxp\.gradle\caches\transforms-2\files-2.1\655ea1ea7815761ad3eb24b5a42949f9\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
-51            android:authorities="com.ahfasxp.githubusers.lifecycle-process"
-51-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ahfasxp\.gradle\caches\transforms-2\files-2.1\655ea1ea7815761ad3eb24b5a42949f9\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
-52            android:exported="false"
-52-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ahfasxp\.gradle\caches\transforms-2\files-2.1\655ea1ea7815761ad3eb24b5a42949f9\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
-53            android:multiprocess="true" />
-53-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ahfasxp\.gradle\caches\transforms-2\files-2.1\655ea1ea7815761ad3eb24b5a42949f9\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
-54    </application>
-55
-56</manifest>
+43        <receiver
+43-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:27:9-30:39
+44            android:name="com.ahfasxp.githubusers.AlarmReceiver"
+44-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:28:13-42
+45            android:enabled="true"
+45-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:29:13-35
+46            android:exported="true" />
+46-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:30:13-36
+47
+48        <provider
+48-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:31:9-36:80
+49            android:name="com.ahfasxp.githubusers.provider.MyContentProvider"
+49-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:33:13-55
+50            android:authorities="com.ahfasxp.githubusers"
+50-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:32:13-58
+51            android:exported="true"
+51-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:34:13-36
+52            android:readPermission="com.ahfasxp.githubusers.READ_DATABASE"
+52-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:35:13-75
+53            android:writePermission="com.ahfasxp.githubusers.WRITE_DATABASE" />
+53-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:36:13-77
+54        <provider
+54-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ahfasxp\.gradle\caches\transforms-2\files-2.1\655ea1ea7815761ad3eb24b5a42949f9\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+55            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+55-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ahfasxp\.gradle\caches\transforms-2\files-2.1\655ea1ea7815761ad3eb24b5a42949f9\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+56            android:authorities="com.ahfasxp.githubusers.lifecycle-process"
+56-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ahfasxp\.gradle\caches\transforms-2\files-2.1\655ea1ea7815761ad3eb24b5a42949f9\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+57            android:exported="false"
+57-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ahfasxp\.gradle\caches\transforms-2\files-2.1\655ea1ea7815761ad3eb24b5a42949f9\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+58            android:multiprocess="true" />
+58-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ahfasxp\.gradle\caches\transforms-2\files-2.1\655ea1ea7815761ad3eb24b5a42949f9\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+59    </application>
+60
+61</manifest>

@@ -40,6 +40,11 @@
         <activity android:name="com.ahfasxp.githubusers.ui.favoriteUser.FavoriteActivity" />
         <activity android:name="com.ahfasxp.githubusers.SettingsActivity" />
 
+        <receiver
+            android:name="com.ahfasxp.githubusers.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
         <provider
             android:name="com.ahfasxp.githubusers.provider.MyContentProvider"
             android:authorities="com.ahfasxp.githubusers"

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:2:1-36:12
+ADDED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:2:1-39:12
 MERGED from [androidx.core:core-ktx:1.3.2] C:\Users\ahfasxp\.gradle\caches\transforms-2\files-2.1\a7914e058f1ea67719a7b447e620aa28\jetified-core-ktx-1.3.2\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.3] C:\Users\ahfasxp\.gradle\caches\transforms-2\files-2.1\183354e1e34da633f69714f120b2be1d\constraintlayout-2.0.3\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\ahfasxp\.gradle\caches\transforms-2\files-2.1\4b5bf9de51d89be3fa74e63160c491d0\material-1.2.1\AndroidManifest.xml:17:1-24:12
@@ -52,20 +52,20 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\User
 MERGED from [androidx.print:print:1.0.0] C:\Users\ahfasxp\.gradle\caches\transforms-2\files-2.1\4a191dfb8598d0a6448d202a63f1b89a\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ahfasxp\.gradle\caches\transforms-2\files-2.1\0ecf1e18a0788bd0d90fa09204a6c3fe\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\ahfasxp\.gradle\caches\transforms-2\files-2.1\d8903238b4e597dc87ac0792a3ccd8ba\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:2:1-39:12
 	package
 		ADDED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:3:5-38
 		INJECTED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml
-		ADDED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:2:1-36:12
+		ADDED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:2:1-39:12
 		INJECTED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml
-		ADDED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:2:1-36:12
+		ADDED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:2:1-39:12
 		INJECTED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:2:11-69
@@ -86,7 +86,7 @@ ADDED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidMa
 	android:name
 		ADDED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:7:17-70
 application
-ADDED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:8:5-34:19
+ADDED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:8:5-37:19
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.3] C:\Users\ahfasxp\.gradle\caches\transforms-2\files-2.1\183354e1e34da633f69714f120b2be1d\constraintlayout-2.0.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.3] C:\Users\ahfasxp\.gradle\caches\transforms-2\files-2.1\183354e1e34da633f69714f120b2be1d\constraintlayout-2.0.3\AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\ahfasxp\.gradle\caches\transforms-2\files-2.1\4b5bf9de51d89be3fa74e63160c491d0\material-1.2.1\AndroidManifest.xml:22:5-20
@@ -151,18 +151,26 @@ activity#com.ahfasxp.githubusers.SettingsActivity
 ADDED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:26:9-54
 	android:name
 		ADDED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:26:19-51
-provider#com.ahfasxp.githubusers.provider.MyContentProvider
-ADDED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:28:9-33:80
-	android:readPermission
-		ADDED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:32:13-75
-	android:authorities
-		ADDED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:29:13-58
+receiver#com.ahfasxp.githubusers.AlarmReceiver
+ADDED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:27:9-30:39
+	android:enabled
+		ADDED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:29:13-35
 	android:exported
-		ADDED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:31:13-36
-	android:writePermission
-		ADDED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:33:13-77
+		ADDED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:30:13-36
 	android:name
-		ADDED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:30:13-55
+		ADDED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:28:13-42
+provider#com.ahfasxp.githubusers.provider.MyContentProvider
+ADDED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:31:9-36:80
+	android:readPermission
+		ADDED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:35:13-75
+	android:authorities
+		ADDED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:32:13-58
+	android:exported
+		ADDED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:34:13-36
+	android:writePermission
+		ADDED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:36:13-77
+	android:name
+		ADDED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:33:13-55
 uses-sdk
 INJECTED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml
