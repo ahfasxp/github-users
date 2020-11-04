@@ -24,7 +24,10 @@
         <activity android:name=".ui.main.MainActivity" />
         <activity android:name=".ui.favoriteUser.FavoriteActivity" />
         <activity android:name=".SettingsActivity" />
-
+        <receiver
+            android:name=".AlarmReceiver"
+            android:enabled="true"
+            android:exported="true" />
         <provider
             android:authorities="com.ahfasxp.githubusers"
             android:name=".provider.MyContentProvider"
