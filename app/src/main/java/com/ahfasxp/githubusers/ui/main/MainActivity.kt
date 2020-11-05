@@ -85,7 +85,7 @@ class MainActivity : AppCompatActivity() {
 
         val listUser = ArrayList<User>()
         for (position in dataName.indices) {
-            var user = User(
+            val user = User(
                 dataAvatar.getResourceId(position, -1),
                 dataName[position],
                 dataUsername[position],
@@ -116,9 +116,8 @@ class MainActivity : AppCompatActivity() {
              */
             override fun onQueryTextSubmit(query: String): Boolean {
                 //recycleview dari search api
-                val username = query.toString()
                 showLoading(true)
-                mainViewModel.setUser(username)
+                mainViewModel.setUser(query)
                 rv_list.layoutManager = LinearLayoutManager(this@MainActivity)
                 rv_list.adapter = adapter
 

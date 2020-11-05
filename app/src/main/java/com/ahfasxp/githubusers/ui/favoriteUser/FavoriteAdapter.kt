@@ -1,6 +1,5 @@
 package com.ahfasxp.githubusers.ui.favoriteUser
 
-import android.app.Activity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,10 +10,10 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import kotlinx.android.synthetic.main.item_user.view.*
 
-class FavoriteAdapter(private val activity: Activity) : RecyclerView.Adapter<FavoriteAdapter.FavoriteViewHolder>() {
+class FavoriteAdapter(favoriteActivity: FavoriteActivity) : RecyclerView.Adapter<FavoriteAdapter.FavoriteViewHolder>() {
     private var onItemClickCallback: OnItemClickCallback? = null
 
-    fun setOnItemClickCallback(onItemClickCallback: FavoriteAdapter.OnItemClickCallback) {
+    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
         this.onItemClickCallback = onItemClickCallback
     }
 
@@ -27,22 +26,6 @@ class FavoriteAdapter(private val activity: Activity) : RecyclerView.Adapter<Fav
 
             notifyDataSetChanged()
         }
-
-    fun addItem(favorite: Favorite) {
-        this.listFavorite.add(favorite)
-        notifyItemInserted(this.listFavorite.size - 1)
-    }
-
-    fun updateItem(position: Int, favorite: Favorite) {
-        this.listFavorite[position] = favorite
-        notifyItemChanged(position, favorite)
-    }
-
-    fun removeItem(position: Int) {
-        this.listFavorite.removeAt(position)
-        notifyItemRemoved(position)
-        notifyItemRangeChanged(position, this.listFavorite.size)
-    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FavoriteViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_user_favorite, parent, false)

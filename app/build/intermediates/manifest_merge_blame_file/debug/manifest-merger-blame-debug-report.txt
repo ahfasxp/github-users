@@ -28,7 +28,7 @@
 18-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:7:71-103
 19
 20    <application
-20-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:8:5-37:19
+20-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:8:5-36:19
 21        android:allowBackup="true"
 21-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:9:9-35
 22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -43,68 +43,66 @@
 27        android:supportsRtl="true"
 27-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:13:9-35
 28        android:testOnly="true"
-29        android:theme="@style/AppTheme"
-29-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:15:9-40
-30        android:usesCleartextTraffic="true" >
-30-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:14:9-44
-31        <activity android:name="com.ahfasxp.githubusers.SplashScreenActivity" >
-31-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:16:9-22:20
-31-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:16:19-55
-32            <intent-filter>
-32-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:17:13-21:29
-33                <action android:name="android.intent.action.MAIN" />
-33-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:18:17-69
-33-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:18:25-66
-34
-35                <category android:name="android.intent.category.LAUNCHER" />
-35-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:20:17-77
-35-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:20:27-74
-36            </intent-filter>
-37        </activity>
-38        <activity android:name="com.ahfasxp.githubusers.ui.detailUser.DetailUserActivity" />
-38-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:23:9-70
-38-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:23:19-67
-39        <activity android:name="com.ahfasxp.githubusers.ui.main.MainActivity" />
-39-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:24:9-58
-39-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:24:19-55
-40        <activity android:name="com.ahfasxp.githubusers.ui.favoriteUser.FavoriteActivity" />
-40-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:25:9-70
-40-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:25:19-67
-41        <activity android:name="com.ahfasxp.githubusers.SettingsActivity" />
-41-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:26:9-54
-41-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:26:19-51
-42
-43        <receiver
-43-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:27:9-30:39
-44            android:name="com.ahfasxp.githubusers.AlarmReceiver"
-44-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:28:13-42
-45            android:enabled="true"
-45-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:29:13-35
-46            android:exported="true" />
-46-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:30:13-36
-47
-48        <provider
-48-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:31:9-36:80
-49            android:name="com.ahfasxp.githubusers.provider.MyContentProvider"
-49-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:33:13-55
-50            android:authorities="com.ahfasxp.githubusers"
-50-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:32:13-58
-51            android:exported="true"
-51-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:34:13-36
-52            android:readPermission="com.ahfasxp.githubusers.READ_DATABASE"
-52-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:35:13-75
-53            android:writePermission="com.ahfasxp.githubusers.WRITE_DATABASE" />
-53-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:36:13-77
-54        <provider
-54-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ahfasxp\.gradle\caches\transforms-2\files-2.1\655ea1ea7815761ad3eb24b5a42949f9\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
-55            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-55-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ahfasxp\.gradle\caches\transforms-2\files-2.1\655ea1ea7815761ad3eb24b5a42949f9\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
-56            android:authorities="com.ahfasxp.githubusers.lifecycle-process"
-56-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ahfasxp\.gradle\caches\transforms-2\files-2.1\655ea1ea7815761ad3eb24b5a42949f9\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
-57            android:exported="false"
-57-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ahfasxp\.gradle\caches\transforms-2\files-2.1\655ea1ea7815761ad3eb24b5a42949f9\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
-58            android:multiprocess="true" />
-58-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ahfasxp\.gradle\caches\transforms-2\files-2.1\655ea1ea7815761ad3eb24b5a42949f9\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
-59    </application>
-60
-61</manifest>
+29        android:theme="@style/AppTheme" >
+29-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:14:9-40
+30        <activity android:name="com.ahfasxp.githubusers.SplashScreenActivity" >
+30-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:15:9-21:20
+30-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:15:19-55
+31            <intent-filter>
+31-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:16:13-20:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:17:17-69
+32-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:17:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:19:17-77
+34-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:19:27-74
+35            </intent-filter>
+36        </activity>
+37        <activity android:name="com.ahfasxp.githubusers.ui.detailUser.DetailUserActivity" />
+37-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:22:9-70
+37-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:22:19-67
+38        <activity android:name="com.ahfasxp.githubusers.ui.main.MainActivity" />
+38-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:23:9-58
+38-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:23:19-55
+39        <activity android:name="com.ahfasxp.githubusers.ui.favoriteUser.FavoriteActivity" />
+39-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:24:9-70
+39-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:24:19-67
+40        <activity android:name="com.ahfasxp.githubusers.SettingsActivity" />
+40-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:25:9-54
+40-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:25:19-51
+41
+42        <receiver
+42-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:26:9-29:39
+43            android:name="com.ahfasxp.githubusers.AlarmReceiver"
+43-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:27:13-42
+44            android:enabled="true"
+44-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:28:13-35
+45            android:exported="true" />
+45-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:29:13-36
+46
+47        <provider
+47-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:30:9-35:80
+48            android:name="com.ahfasxp.githubusers.provider.MyContentProvider"
+48-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:32:13-55
+49            android:authorities="com.ahfasxp.githubusers"
+49-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:31:13-58
+50            android:exported="true"
+50-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:33:13-36
+51            android:readPermission="com.ahfasxp.githubusers.READ_DATABASE"
+51-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:34:13-75
+52            android:writePermission="com.ahfasxp.githubusers.WRITE_DATABASE" />
+52-->D:\Documents\AndroidStudioProjects\GithubUsers\app\src\main\AndroidManifest.xml:35:13-77
+53        <provider
+53-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ahfasxp\.gradle\caches\transforms-2\files-2.1\655ea1ea7815761ad3eb24b5a42949f9\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+54            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+54-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ahfasxp\.gradle\caches\transforms-2\files-2.1\655ea1ea7815761ad3eb24b5a42949f9\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+55            android:authorities="com.ahfasxp.githubusers.lifecycle-process"
+55-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ahfasxp\.gradle\caches\transforms-2\files-2.1\655ea1ea7815761ad3eb24b5a42949f9\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+56            android:exported="false"
+56-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ahfasxp\.gradle\caches\transforms-2\files-2.1\655ea1ea7815761ad3eb24b5a42949f9\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+57            android:multiprocess="true" />
+57-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ahfasxp\.gradle\caches\transforms-2\files-2.1\655ea1ea7815761ad3eb24b5a42949f9\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+58    </application>
+59
+60</manifest>

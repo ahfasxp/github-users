@@ -18,6 +18,7 @@
     <string name="reminder_time">Reminder at 9:00 AM</string>
     <string name="lets_find_user_popular">Lets find user popular on github</string>
     <string name="favorite">Favorite</string>
+    <string name="splash_screen">Splash Screen</string>
 
     <string-array name="username">
         <item>JakeWharton</item>
