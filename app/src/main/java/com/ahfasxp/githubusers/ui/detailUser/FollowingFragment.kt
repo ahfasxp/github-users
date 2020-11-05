@@ -49,10 +49,6 @@ class FollowingFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_following, container, false)
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-    }
-
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         val username = arguments?.getString(ARG_USERNAME)
